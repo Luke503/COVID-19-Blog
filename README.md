@@ -3,8 +3,11 @@
 Group Members
 
 Luke Bray - brayl@oregonstate.edu
+
 Gretel Rajamoney - rajamong@oregonstate.edu
+
 Hannah Maung - maungh@oregonstate.edu
+
 Zachary Smith - smithz6@oregonstate.edu
 
 
