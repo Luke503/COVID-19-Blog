@@ -7,6 +7,8 @@ var port = process.env.PORT || 3000;
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+app.use(express.static('public'));
+
 app.get('*', function(req, res) {
     res.status(404).render('404', {});
 });
