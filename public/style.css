@@ -48,7 +48,7 @@ p {
 }
 
 h1 {
-    font: 600 4.0rem/1.2 "Roboto";
+    font: 600 4.0rem/1.2 "Impact";
     color: rgb(0, 0, 0);
 }
 
@@ -67,9 +67,6 @@ h3 {
     color: rgb(0, 0, 0);
 }
 
-
-/* Blog Title */
-
 .header {
     padding: 30px;
     font-size: 40px;
@@ -78,27 +75,16 @@ h3 {
 }
 
 
-/* Create two unequal columns that floats next to each other */
-
-
-/* Left column */
-
 .leftcolumn {
     float: left;
     width: 75%;
 }
-
-
-/* Right column */
 
 .rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
 }
-
-
-/* Fake image */
 
 .fakeimg {
     background-color: #aaa;
