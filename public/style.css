@@ -68,10 +68,12 @@ h3 {
 }
 
 
-label{
+tr{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
+
+td {padding: 1px 6px;} 
 
 .header {
     padding: 30px;
@@ -164,11 +166,11 @@ input:focus{
 }
 
 #firstname{
-    display:block;
+    display: block;
     width: 200px;
 }
 
 #lastname{
-    display:block;
+    display: block;
     width: 200px;
 }
