@@ -67,6 +67,12 @@ h3 {
     color: rgb(0, 0, 0);
 }
 
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .header {
     padding: 30px;
     font-size: 40x;
@@ -124,4 +130,45 @@ h3 {
     height: 250px;
     object-fit: cover;
     padding-right: 20px;
+}
+
+#submit-btn{
+    padding:5px;
+    border: 1px solid #666;
+    font: 400 1.0rem/1.5 "Roboto";
+    background-color: rgb(35, 35, 35);
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+#submit-btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+input:focus{
+    border: 1px solid #555;
+ }
+
+#experience{
+    display: block;
+    width: 800px;
+    height: 300px;
+    padding: 0.4em;
+    padding-bottom:270px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#firstname{
+    display:block;
+    width: 200px;
+}
+
+#lastname{
+    display:block;
+    width: 200px;
 }

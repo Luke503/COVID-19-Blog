@@ -159,12 +159,17 @@
 
                         <form action="/action_page.php" method="get">
                             <p>
-                                <label for="firstname">First Name:</label>
-                                <input type="text" id="firstname" name="firstname"><br><br>
-                                <label for="lastname">Last Name:</label>
-                                <input type="text" id="lastname" name="lastname"><br><br>
-                                <label for="email">Personal Experience:</label>
-                                <input type="text" id="email" name="email"><br><br>
+                                <div>
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" id="firstname" name="firstname" placeholder="Enter First Name"><br><br>
+
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name"><br><br>
+                                </div>
+                                <div>
+                                    <label for="email">Personal Experience:</label>
+                                    <span><input type="textarea" id="experience" name="experience" wrap="soft" placeholder="Enter Text"><br><br></span>
+                                </div>
                             </p>
                             <p>What Year Are You ?
                                 <br />
@@ -181,7 +186,7 @@
                                 <input type="radio" name="year" value="Fourth" /> Fourth Year</label>
                                 <br />
                             </p>
-                            <input type="submit" value="Submit">
+                            <input type="submit" id="submit-btn" value="Submit">
                         </form>
                     </div>
                 </div>
