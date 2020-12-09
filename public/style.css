@@ -80,12 +80,14 @@ h3 {
 
 tr {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 td {
     padding: 1px 6px;
     margin-right: 16px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .header {
@@ -219,7 +221,15 @@ input:focus {
     left: 0;
     height: 13px;
     width: 13px;
-    background-color: lightgrey;
+    background-color: gainsboro;
     border-radius: 50px;
-    border: 1px solid #666;
+    border: 1.5px solid black;
+}
+
+.radio-label:hover input ~ .checkmark {
+  background-color: #708090;
+}
+
+.radio-label input:checked ~ .checkmark {
+  background-color: royalblue;
 }
