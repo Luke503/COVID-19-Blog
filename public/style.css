@@ -256,7 +256,7 @@ input {
     border: 3px solid black;
     padding: 5px;
     margin-left: 15%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     width: 800px;
     height: 400px;
     overflow: scroll;
@@ -269,6 +269,10 @@ input {
     color: black;
     background-color: black;
     height: 5px;
+}
+
+.user-post{
+    border: 1px solid black;
 }
 
 
