@@ -34,14 +34,11 @@
 }
 
 
-/*
+
 .nav-header{
-    position: fixed;
-    width: 100%;
-    height: 20px;
-    z-index: 10;
+    position: sticky;
 }
-*/
+
 
 
 /* Fonts */
@@ -51,6 +48,12 @@ body {
     padding: 0px;
     background: #f1f1f1;
     overflow-x: hidden;
+}
+
+form{
+    margin:0px; 
+    padding:0px; 
+    display:inline;
 }
 
 p {
@@ -88,6 +91,10 @@ td {
     margin-right: 16px;
     padding-bottom: 0px;
     padding-top: 0px;
+}
+
+input {
+ outline:none;
 }
 
 .header {
@@ -163,6 +170,7 @@ td {
     width: 300px;
     height: 40px;
     color: white;
+    font-weight: bold;
     border-radius: 2px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -172,44 +180,48 @@ td {
     color: rgb(56, 56, 56);
 }
 
-input:focus {
-    border: 1px solid #555;
-}
-
 .text-area {
     height: 350px;
+    margin-right: width 0px;
+    font-weight: bold;
 }
 
 #experience {
+    
+    border: 1px solid black;
     display: block;
+    background-color: #f1f1f1;
     width: 600px;
     height: 300px;
     padding: 0.4em;
     padding-bottom: 270px;
     margin-right: 1px;
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-.text-area {
-    margin-right: width 0px;
 }
 
 #firstname {
     display: block;
     width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 15px;
 }
 
 #lastname {
     display: block;
     width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 15px;
 }
 
 .radio-label {
     position: relative;
-    padding-left: 25px;
+    padding-left: 23px;
     cursor: pointer;
     font-size: 13px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
 }
 
 .radio-label input {
@@ -222,10 +234,11 @@ input:focus {
 
 .checkmark {
     position: absolute;
-    top: 0;
+    top: 3.4px;
     left: 0;
     height: 13px;
     width: 13px;
+
     background-color: gainsboro;
     border-radius: 50px;
     border: 1.5px solid black;
@@ -236,5 +249,41 @@ input:focus {
 }
 
 .radio-label input:checked ~ .checkmark {
-  background-color: royalblue;
+  background-color: black;
+}
+
+.posts{
+    border: 3px solid black;
+    padding: 5px;
+    margin-left: 15%;
+    margin-bottom: 15%;
+    width: 800px;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.discussion-break{
+    border: 0;
+    width: 80%;
+    color: black;
+    background-color: black;
+    height: 5px;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+background: grey;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: black;  
 }
