@@ -8,13 +8,6 @@ var bodyParser = require('body-parser');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-
-/*
-app.get('/home', function(req, res) {
-  res.status(200).render('postPage', postData);
-});
-*/
-
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.static('public'));

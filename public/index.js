@@ -48,6 +48,8 @@ function postComment() {
 
     console.log("newpost type: ", typeof(newPost));
     console.log("post added");
+
+    clearInput();
   }
 }
 
@@ -56,3 +58,21 @@ window.addEventListener('DOMContentLoaded', function () {
   submitBtn.addEventListener('click', postComment);
 
 });
+
+function clearInput() {
+
+  var postText = [
+    document.getElementById('firstname'),
+    document.getElementById('lastname'),
+    document.getElementById('major'),
+    document.getElementById('experience')
+  ];
+
+  postText.forEach(function (inputElem) {
+    inputElem.value = '';
+  });
+
+  var majorCheckbox = document.querySelector('#post-year-fieldset input[checked]');
+  majorCheckbox = true;
+
+}
