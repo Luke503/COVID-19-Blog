@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="postsTemplate.js" charset="utf-8" defer></script>
+    <script src="index.js" charset="utf-8" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.runtime.js"></script>
+
 </head>
 
 <div class="header">
@@ -216,7 +222,7 @@
                             <div class="posts">
                                 <div class="user-post">
                                     <div>
-                                        <span class="first-name">First Name</span> <span class="last-name">Last Name</span> <span class="year"><i>Year</i></span> <span class="last-name"><i>Major</i></span>
+                                        <span class="first-name">First Name</span> <span class="last-name">Last Name</span> <span class="year"><i>Year</i></span> <span class="major"><i>Major</i></span>
                                     </div>
                                     <div>
                                         <p class="user-comment">Comment</p>
@@ -225,7 +231,7 @@
 
                                 <div class="user-post">
                                     <div>
-                                        <span class="first-name">First Name</span> <span class="last-name">Last Name</span> <span class="year"><i>Year</i></span> <span class="last-name"><i>Major</i></span>
+                                        <span class="first-name">First Name</span> <span class="last-name">Last Name</span> <span class="year"><i>Year</i></span> <span class="major"><i>Major</i></span>
                                     </div>
                                     <div>
                                         <p class="user-comment">Comment</p>
@@ -236,7 +242,7 @@
 
                             <hr class="discussion-break">
 
-                            <form class="discussion-form" action="/action_page.php" method="get">
+                            <form class="discussion-form" method="get">
                                 <div>
                                     <table>
                                         <tr>
@@ -251,6 +257,7 @@
                                             <td><input type="text" id="major" name="major" placeholder="Enter Major"><br><br></td>
                                             <td>
                                                 <br />
+                                                <fieldset id="post-year-fieldset" class="year-fieldset">
                                                 <label class="radio-label">
                                                     <input type="radio" name="year" value="First" /> First Year
                                                     <span class="checkmark"></span>
@@ -273,6 +280,7 @@
                                                     <span class="checkmark"></span>
                                                 </label>
                                                 <br />
+                                            </fieldset>
 
                                             </td>
                                         </tr>

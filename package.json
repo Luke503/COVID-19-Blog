@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js" ,
+    "build": "handlebars path/to/posts.handlebars -f public/postsTemplate.js",
   },
   "keywords": [],
   "author": "",

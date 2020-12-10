@@ -2,6 +2,8 @@
 
 function createPost(firstName, lastName, year, major, comment) {
 
+  console.log("createPost called");
+
   var context = {
     firstName: firstName,
     lastName: lastName,
@@ -20,6 +22,8 @@ function createPost(firstName, lastName, year, major, comment) {
 var allPosts = [];
 
 function handleModalAcceptClick() {
+
+  console.log("handleModalAcceptClick called");
 
   var firstName = document.getElementById('firstname').value.trim();
   var lastName = document.getElementById('lastname').value.trim();
@@ -40,15 +44,15 @@ function handleModalAcceptClick() {
     });
 
   }
-
 }
 
 function parsePostElem(postElem) {
 
+  console.log("parsePostElem Called");
   var post = {
     firstName: postElem.getAttribute('first-name'),
     lastName: postElem.getAttribute('last-name'),
-    year: postElem.getAttribute('year')
+    year: postElem.getAttribute('year'),
     major: postElem.getAttribute('major'),
     comment: postElem.getAttribute('user-comment')
   };
@@ -63,11 +67,12 @@ window.addEventListener('DOMContentLoaded', function () {
   	for (var i = 0; i < postElems.length; i++) {
     	allPosts.push(parsePostElem(postElems[i]));
   	}
-
-}
+})
 
 
 var postButton = document.getElementById('submit-btn');
   if (postButton) {
     postButton.addEventListener('click', handleModalAcceptClick);
   }
+
+}
