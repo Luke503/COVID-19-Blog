@@ -1,0 +1,72 @@
+ <div class="bottomcolumn">
+                        <div class="card">
+                            <h2 class="text-center" id="Discussion">Discussion</h2>
+                            <div>
+                                <img class="mx-auto d-block" src="campus_2.jpg" alt="schoolclosed" width="200" height="200">
+                                <p class="text-center" >This is the discussion board. Post what you think down below.</p>
+                            </div>
+
+                            <div class="posts">
+
+                                <h3 class="comment-header">Comments:</h3>
+
+                                {{#each discussion}}
+                                    {{>posts}}
+                                {{/each}}
+
+                            </div>
+
+                            <form class="discussion-form" method="get">
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td>First Name</td>
+                                            <td>Last Name</td>
+                                            <td>Major</td>
+                                            <td>Year</td>
+                                        </tr>
+                                        <tr class="discussion-table">
+                                            <td><input type="text" id="firstname" name="firstname" placeholder="Enter First Name"><br><br></td>
+                                            <td><input type="text" id="lastname" name="lastname" placeholder="Enter Last Name"><br><br></td>
+                                            <td><input type="text" id="major" name="major" placeholder="Enter Major"><br><br></td>
+                                            <td>
+                                                <br />
+                                                <fieldset id="post-year-fieldset" class="year-fieldset">
+                                                <label class="radio-label">
+                                                    <input type="radio" name="year" value="Freshman" checked/> Freshman
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <br />
+                                                <label class="radio-label">
+                                                    <input type="radio" name="year" value="Sophomore" /> Sophomore
+                                                    <span class="checkmark"></span>
+                                                </label>
+
+
+                                                <br />
+                                                <label class="radio-label">
+                                                    <input type="radio" name="year" value="Junior" /> Junior
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <br />
+                                                <label class="radio-label">
+                                                    <input type="radio" name="year" value="Senior" /> Senior
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <br />
+                                            </fieldset>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="text-area">
+                                    <label for="experience">Personal Experience</label>
+                                    <span><input type="textarea" id="experience" name="experience" wrap="soft" placeholder="Enter Text"><br><br></span>
+                                </div>
+                                <input type="button" id="submit-btn" value="Submit">
+
+                            </form>
+                        </div>
+                    </div>
