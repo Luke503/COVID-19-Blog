@@ -24,6 +24,26 @@ app.get('/home', function (req, res, next) {
   res.status(200).render('home');
 });
 
+app.get('/team', function (req, res, next) {
+  console.log("Using handlebars");
+  res.status(200).render('team');
+});
+
+app.get('/advice', function (req, res, next) {
+  console.log("Using handlebars");
+  res.status(200).render('advice');
+});
+
+app.get('/resources', function (req, res, next) {
+  console.log("Using handlebars");
+  res.status(200).render('resources');
+});
+
+app.get('/discussion', function (req, res, next) {
+  console.log("Using handlebars");
+  res.status(200).render('discussion');
+});
+
 app.get('*', function(req, res) {
     res.status(404).render('404', {});
 });
