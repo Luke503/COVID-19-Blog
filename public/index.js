@@ -56,10 +56,3 @@ window.addEventListener('DOMContentLoaded', function () {
   submitBtn.addEventListener('click', postComment);
 
 });
-
-
-function ClearFields() {
-
-  document.getElementById("textfield1").value = "";
-  document.getElementById("textfield2").value = "";
-}
