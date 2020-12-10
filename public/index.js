@@ -18,7 +18,6 @@ function createPost(firstName, lastName, year, major, comment) {
   console.log("== photoCardHTML:", postsHTML);
 
   return postsHTML;
-
 }
 
 
@@ -43,31 +42,15 @@ function postComment() {
     console.log("== newPost:", newPost);
 
     var postsContainer = document.querySelector('.posts');
+
+    console.log("postsContainer:", postsContainer);
     postsContainer.insertAdjacentHTML('beforeend',newPost);
 
     console.log("post added");
-
   }
 }
 
-function parsePostElem(postElem) {
-
-  console.log("parsePostElem Called");
-  var post = {
-    firstName: postElem.getAttribute('first-name'),
-    lastName: postElem.getAttribute('last-name'),
-    year: postElem.getAttribute('year'),
-    major: postElem.getAttribute('major'),
-    comment: postElem.getAttribute('user-comment')
-  };
-
-
-  return post;
-
-}
-
-window.addEventListener('DOMContentLoaded', function () {
-
+window.addEventListener('DOMContentLoaded', function (evt) {
   var submitBtn = document.getElementById('submit-btn');
   submitBtn.addEventListener('click', postComment);
 
