@@ -15,8 +15,11 @@ function createPost(firstName, lastName, year, major, comment) {
 
   var postsHTML = Handlebars.templates.posts(context);
 
-  var fullPage = document.getElementByClass('posts');
-  fullPage.insertAdjacentHTML('beforeend',postsHTML);
+  console.log("== photoCardHTML:", postsHTML);
+
+  return postsHTML;
+
+}
 
 
 var allPosts = [];
@@ -27,7 +30,7 @@ function handleModalAcceptClick() {
 
   var firstName = document.getElementById('firstname').value.trim();
   var lastName = document.getElementById('lastname').value.trim();
-  var year = document.querySelector('#post-year-fieldset class input:checked').value;
+  var year = document.querySelector('#post-year-fieldset input:checked').value;
   var major = document.getElementById('major').value.trim();
   var comment = document.getElementById('experience').value.trim();
 
@@ -35,13 +38,14 @@ function handleModalAcceptClick() {
     alert("Please Fill in The Required Fields!");
   } else {
 
-    allPosts.push({
-    	firstName: firstName,
-    	lastName: lastName,
-    	year: year,
-    	major: major,
-    	comment: comment
-    });
+    var newPost = createPost(firstName, lastName, year, major, comment);
+
+    console.log("== newPost:", newPost);
+
+    var postsContainer = document.querySelector('.posts');
+    postsContainer.insertAdjacentHTML('beforeend',newPost);
+
+    console.log("post added");
 
   }
 }
@@ -63,16 +67,8 @@ function parsePostElem(postElem) {
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-	var postElems = document.getElementsByClassName('user-post');
-  	for (var i = 0; i < postElems.length; i++) {
-    	allPosts.push(parsePostElem(postElems[i]));
-  	}
-})
 
+  var submitBtn = document.getElementById('submit-btn');
+  submitBtn.addEventListener('click', handleModalAcceptClick);
 
-var postButton = document.getElementById('submit-btn');
-  if (postButton) {
-    postButton.addEventListener('click', handleModalAcceptClick);
-  }
-
-}
+});
