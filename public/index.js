@@ -46,11 +46,12 @@ function postComment() {
     console.log("postsContainer:", postsContainer);
     postsContainer.insertAdjacentHTML('beforeend',newPost);
 
+    console.log("newpost type: ", typeof(newPost));
     console.log("post added");
   }
 }
 
-window.addEventListener('DOMContentLoaded', function (evt) {
+window.addEventListener('DOMContentLoaded', function () {
   var submitBtn = document.getElementById('submit-btn');
   submitBtn.addEventListener('click', postComment);
 
