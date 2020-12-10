@@ -24,9 +24,9 @@ function createPost(firstName, lastName, year, major, comment) {
 
 var allPosts = [];
 
-function handleModalAcceptClick() {
+function postComment() {
 
-  console.log("handleModalAcceptClick called");
+  console.log("postComment called");
 
   var firstName = document.getElementById('firstname').value.trim();
   var lastName = document.getElementById('lastname').value.trim();
@@ -69,6 +69,6 @@ function parsePostElem(postElem) {
 window.addEventListener('DOMContentLoaded', function () {
 
   var submitBtn = document.getElementById('submit-btn');
-  submitBtn.addEventListener('click', handleModalAcceptClick);
+  submitBtn.addEventListener('click', postComment);
 
 });
