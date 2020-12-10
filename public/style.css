@@ -265,13 +265,6 @@ input {
     overflow-x: hidden;
 }
 
-.discussion-break {
-    border: 0;
-    width: 80%;
-    color: black;
-    background-color: black;
-    height: 5px;
-}
 
 .user-post {
     border: 1px solid black;
