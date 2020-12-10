@@ -9,26 +9,21 @@ app.set('view engine', 'handlebars');
 
 
 /*
-app.get('/', function(req, res) {
+app.get('/home', function(req, res) {
   res.status(200).render('postPage', postData);
 });
 */
 
-/*
-app.get('/index', function (req, res, next) {
-  res.status(200).sendFile(__dirname + '/public/index.html');
-});
-*/
 app.use(express.json());
 
 app.use(express.static('public'));
 
-/*
-app.get('/', function (req, res, next) {
+
+app.get('/home', function (req, res, next) {
   console.log("Using handlebars");
-  res.status(200).render('main');
+  res.status(200).render('home');
 });
-*/
+
 app.get('*', function(req, res) {
     res.status(404).render('404', {});
 });
