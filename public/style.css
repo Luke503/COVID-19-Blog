@@ -263,7 +263,6 @@ input {
 
 .posts {
     border: 3px solid black;
-    padding: 5px;
     margin-left: 15%;
     margin-bottom: 5%;
     width: 800px;
@@ -280,9 +279,11 @@ input {
 }
 
 .comment-header{
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     margin-bottom: 20px;
-    position: sticky;
+    background-color: black;
+    color: white;
+    width: 9000px;
 }
 
 ::-webkit-scrollbar {
