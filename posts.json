@@ -1,0 +1,7 @@
+{
+  "posts":[
+
+    {"firstname": "Zachary","lastname": "Smith","major": "Computer Science","year": "Sophomore","comment": "This is a test"}
+  ]
+
+}
