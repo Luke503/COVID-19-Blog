@@ -3,6 +3,7 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var app = express();
 var port = process.env.PORT || 3000;
+var bodyParser = require('body-parser');
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
@@ -14,8 +15,8 @@ app.get('/home', function(req, res) {
 });
 */
 
+app.use(bodyParser.json());
 app.use(express.json());
-
 app.use(express.static('public'));
 
 
