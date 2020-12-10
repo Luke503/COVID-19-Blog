@@ -274,10 +274,9 @@ input {
 
 .user-post {
     border: 1px solid black;
+    border-radius: 10px;
     margin-bottom: 20px;
     margin-left:10px;
-    background-color: black
-    color:white;
     font-weight: bold;
 }
 
